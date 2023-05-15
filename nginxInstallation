@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Update the package index
+sudo apt update -y
+
+# Install Nginx
+sudo apt install nginx -y
+
+# Start Nginx service
+sudo update-rc.d nginx defaults
+sudo service nginx start
+
+# Check Nginx status
+sudo service nginx status
